@@ -1,0 +1,104 @@
+html {
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+#card-array {
+  width: 80%;
+  margin: auto;
+  position: relative;
+}
+#buttons {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+#buttons button {
+  color: teal;
+  height: 182px;
+  font-size: 2rem;
+  /* background: black; */
+}
+
+.face-down {
+  background: teal;
+}
+
+.face-up {
+  background: white;
+}
+
+#reset {
+  width: 50px;
+  height: 30px;
+}
+
+div.scorepanel ul {
+  width: 300px;
+  justify-content: space-between;
+  display: flex;
+  list-style: none;
+}
+/* div.scorepanel ul>li{ */
+/* } */
+
+.winnerScreen {
+  width: 100%;
+  height: 250px;
+
+  background-color: white;
+  display: none;
+  border: 1px solid green;
+  z-index: 10;
+}
+.scorepanel {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 20px;
+  /* list-style: none; */
+}
+.outcome {
+  color: black;
+}
+
+#fireworks {
+  width: 100%;
+  height: 800px;
+  /* background-image:url(); */
+  display: none;
+  /* background-image: url("/cat.jpg");
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: center; */
+
+  position: fixed;
+  border: 1px solid pink;
+  z-index: 100;
+  padding-left: 139px;
+  padding-right: 200px;
+}
+
+img {
+  width: 100%;
+  position: absolute;
+  margin-left: 0;
+  padding-left: 0;
+}
+.finalpage p {
+  display: flex;
+  justify-content: center;
+  font-size: 22px;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
